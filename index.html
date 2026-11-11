@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#8b5cf6" />
+  <meta name="description" content="Mood Translator turns everyday expressions into possible emotional meanings—with a little humor and a lot of empathy." />
+  <title>Mood Translator — Because 'I'm fine' needs subtitles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Mood Translator home"><span class="brand-mark">♡</span><span>Mood<span class="brand-light">Translator</span><small>SUBTITLES FOR REAL LIFE</small></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#how-it-works">How it works</a><a href="#examples">Examples</a><a href="#translator">Translator</a>
+    </nav>
+    <button class="header-cta" data-scroll="#translator">Try it free <span>↗</span></button>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> THE HUMAN-TO-HUMAN TRANSLATOR</div>
+        <h1>Ever wondered what people <span class="gradient-text">REALLY</span> mean?</h1>
+        <p class="hero-sub">Sometimes “I'm fine” means everything except fine. Let’s translate the words between the lines—with humor, heart, and zero mind-reading claims.</p>
+        <div class="hero-actions"><button class="primary-btn" data-scroll="#translator">Start translating <span>→</span></button><a class="text-link" href="#how-it-works">See how it works <span>↓</span></a></div>
+        <div class="social-proof"><div class="avatar-stack"><i>😊</i><i>🥹</i><i>😎</i><i>🤍</i></div><span><strong>A little more understanding</strong><br>one sentence at a time</span></div>
+      </div>
+      <div class="hero-art" aria-label="Sample translation illustration">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="sparkle sparkle-a">✦</div><div class="sparkle sparkle-b">✧</div>
+        <div class="chat-bubble bubble-top"><span class="bubble-label">THEY SAID</span><strong>“I'm fine.”</strong><span class="bubble-emoji">🙂</span></div>
+        <div class="mascot"><div class="mascot-face"><span class="eye"></span><span class="eye"></span><span class="cheek"></span><span class="cheek"></span><span class="smile"></span></div><div class="mascot-heart">♡</div></div>
+        <div class="chat-bubble bubble-bottom"><span class="bubble-label">POSSIBLE SUBTITLES</span><strong>“Battery at 2%.</strong><br><strong>Charger = kindness.”</strong><span class="bubble-emoji">🔋</span></div>
+        <div class="floating-chip">✨ Not a mind reader. Just a vibe translator.</div>
+      </div>
+    </section>
+
+    <section class="trust-strip"><span>MADE FOR THE “I DON'T KNOW HOW TO EXPLAIN IT” MOMENTS</span><b>♡</b><span>FUNNY WHEN YOU NEED A LAUGH</span><b>♡</b><span>GENTLE WHEN YOU NEED A LISTEN</span></section>
+
+    <section class="section-wrap how-section" id="how-it-works">
+      <div class="section-heading"><div class="eyebrow">THREE LITTLE STEPS</div><h2>Lost in translation?<br><span class="gradient-text">We've got subtitles.</span></h2><p>No complicated psychology. Just thoughtful possibilities to help you understand each other a little better.</p></div>
+      <div class="steps-grid">
+        <article class="step-card"><div class="step-icon lavender">✍️</div><span class="step-number">01 / SAY IT</span><h3>Drop the sentence</h3><p>Type the phrase you've heard—or something you catch yourself saying.</p></article>
+        <article class="step-card"><div class="step-icon pink">🎭</div><span class="step-number">02 / SET THE VIBE</span><h3>Choose your mood</h3><p>Add a little context if you want. Your mood can change the meaning.</p></article>
+        <article class="step-card"><div class="step-icon blue">💌</div><span class="step-number">03 / GET SUBTITLES</span><h3>Find the words</h3><p>Explore a funny take, a thoughtful take, and a kind way to respond.</p></article>
+      </div>
+    </section>
+
+    <section class="translator-section" id="translator">
+      <div class="section-wrap">
+        <div class="translator-heading"><div><div class="eyebrow">YOUR WORDS, WITH SUBTITLES</div><h2>Let's decode <span class="gradient-text">that feeling.</span></h2></div><div class="privacy-note">🔒 <span>Private by design<br><b>Your history stays on this device.</b></span></div></div>
+        <div class="workspace">
+          <div class="input-panel panel">
+            <div class="panel-top"><div><span class="step-pill">01</span><span class="panel-kicker">THE ORIGINAL MESSAGE</span></div><span class="optional">NO JUDGMENT ZONE ✨</span></div>
+            <label class="sr-only" for="phraseInput">Enter a sentence to translate</label>
+            <textarea id="phraseInput" maxlength="280" placeholder="Type something like “I'm fine...”" rows="3"></textarea>
+            <div class="input-meta"><span id="charCount">0 / 280</span><button class="clear-input" id="clearInput" type="button">Clear ×</button></div>
+            <div class="mood-block"><div class="field-heading"><span>Any mood context?</span><span class="optional">OPTIONAL</span></div><div class="mood-options" id="moodOptions">
+              <button class="mood-chip" data-mood="happy">😁 <span>Happy</span></button><button class="mood-chip" data-mood="sad">😢 <span>Sad</span></button><button class="mood-chip" data-mood="angry">😡 <span>Angry</span></button><button class="mood-chip" data-mood="stressed">😫 <span>Stressed</span></button><button class="mood-chip" data-mood="confused">😵 <span>Confused</span></button><button class="mood-chip" data-mood="excited">🤩 <span>Excited</span></button><button class="mood-chip" data-mood="lonely">🥺 <span>Lonely</span></button><button class="mood-chip" data-mood="tired">😴 <span>Tired</span></button><button class="mood-chip" data-mood="neutral">😐 <span>Neutral</span></button>
+            </div></div>
+            <div class="mode-row"><div class="field-heading"><span>Pick your subtitle style</span></div><div class="mode-switch" role="group" aria-label="Translation mode"><button class="mode-btn active" data-mode="funny">😂 Funny mode</button><button class="mode-btn" data-mode="serious">❤️ Serious mode</button></div></div>
+            <button class="primary-btn translate-btn" id="translateBtn">Translate this <span>✦</span></button>
+            <div class="or-divider"><span>OR FOR A LITTLE CHAOS</span></div><button class="random-btn" id="randomBtn">🎲 Translate my life</button>
+            <p class="input-footnote">A playful reflection tool, not a diagnosis or a substitute for asking someone how they feel.</p>
+          </div>
+          <div class="result-panel panel" id="resultPanel" aria-live="polite">
+            <div class="result-empty" id="emptyState"><div class="empty-illustration"><span>💬</span><i>✦</i><b>♡</b></div><div class="eyebrow">YOUR SUBTITLES WILL APPEAR HERE</div><h3>Ready when you are.</h3><p>Type a sentence, pick a vibe, and let's explore what it <em>might</em> mean.</p><div class="empty-samples"><span>Try:</span><button class="sample-link" data-sample="I'm fine.">“I'm fine.”</button><button class="sample-link" data-sample="Whatever.">“Whatever.”</button><button class="sample-link" data-sample="Nothing happened.">“Nothing happened.”</button></div></div>
+            <div id="resultContent" class="result-content hidden">
+              <div class="result-topline"><span class="step-pill">02</span><span class="panel-kicker">THE SUBTITLES</span><button class="icon-btn" id="copyBtn" title="Copy translation" aria-label="Copy translation">⧉</button></div>
+              <div class="original-box"><span>YOU SAID</span><p id="originalText"></p></div>
+              <div class="meaning-box"><div class="meaning-heading"><span id="meaningEmoji">💭</span><span>POSSIBLE MEANING</span><span class="possibility-tag">JUST A POSSIBILITY</span></div><p id="meaningText"></p></div>
+              <div class="translation-card funny-card" id="funnyCard"><div class="translation-label">😂 THE FUNNY SUBTITLE</div><p id="funnyText"></p></div>
+              <div class="translation-card serious-card" id="seriousCard"><div class="translation-label">❤️ THE THOUGHTFUL SUBTITLE</div><p id="seriousText"></p></div>
+              <div class="response-box"><div class="response-icon">💌</div><div><span>WHAT YOU COULD SAY BACK</span><p id="responseText"></p></div></div>
+              <div class="result-actions"><button class="secondary-btn" id="copyResultBtn">⧉ Copy result</button><button class="secondary-btn" id="saveBtn">♡ Save to history</button></div>
+              <p class="disclaimer">People are more than one sentence. The best translation? A kind, curious question.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap examples-section" id="examples">
+      <div class="section-heading centered"><div class="eyebrow">A SNEAK PEEK</div><h2>Things we say vs.<br><span class="gradient-text">what they might mean.</span></h2><p>Tap any phrase to try it in the translator.</p></div>
+      <div class="examples-grid">
+        <button class="example-card" data-sample="I'm fine."><span class="example-emoji">🙂</span><span class="example-said">“I'm fine.”</span><span class="example-arrow">↗</span><small>Battery status: let's check in.</small></button>
+        <button class="example-card" data-sample="Whatever."><span class="example-emoji">🙄</span><span class="example-said">“Whatever.”</span><span class="example-arrow">↗</span><small>Conversation tab may be closing.</small></button>
+        <button class="example-card" data-sample="Leave me alone."><span class="example-emoji">🚪</span><span class="example-said">“Leave me alone.”</span><span class="example-arrow">↗</span><small>Space requested. Respectfully.</small></button>
+        <button class="example-card" data-sample="It's okay."><span class="example-emoji">🌧️</span><span class="example-said">“It's okay.”</span><span class="example-arrow">↗</span><small>Could be okay. Could be complicated.</small></button>
+      </div>
+    </section>
+
+    <section class="history-section" id="history">
+      <div class="section-wrap">
+        <div class="history-heading"><div><div class="eyebrow">YOUR LITTLE TIME CAPSULE</div><h2>Translation <span class="gradient-text">history.</span></h2><p>Saved on this device only. No account, no cloud, no fuss.</p></div><button class="clear-history-btn" id="clearHistoryBtn">Clear all history</button></div>
+        <div class="history-list" id="historyList"><div class="history-empty">🫧 <span>Your saved translations will show up here.</span></div></div>
+      </div>
+    </section>
+
+    <section class="closing-cta section-wrap"><div class="closing-sparkle">✦</div><div class="eyebrow">A LITTLE MORE EMPATHY LOOKS GOOD ON EVERYONE</div><h2>Let's make room for<br><span class="gradient-text">what's underneath.</span></h2><p>Because sometimes the kindest thing you can do is ask, “What do you mean by that?”</p><button class="primary-btn" data-scroll="#translator">Find my subtitles <span>→</span></button></section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">♡</span><span>Mood<span class="brand-light">Translator</span><small>SUBTITLES FOR REAL LIFE</small></span></a><p>Built with a little humor & a lot of heart. ♡</p><span>© 2026 Mood Translator · Not mind reading, just meaning exploring.</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
